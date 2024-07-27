@@ -58,7 +58,7 @@ function App() {
                 min={6}
                 max={100}
                 value={length}
-                onChange={e => setLength(Number.parseInt(e.target.value))}
+                onChange={e => setLength(Number(e.target.value))}
                 className='cursor-pointer'
               />
               <label>Length:{length}</label>
